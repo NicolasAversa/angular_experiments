@@ -1,0 +1,11 @@
+<div
+  class="alert"
+  role="alert"
+  [ngClass]="{
+    'alert-success': serverStatus === 'online',
+    'alert-danger': serverStatus === 'offline'
+  }"
+>
+  {{ "Servidor" }} con ID {{ serverId }} tiene el estado de:
+  {{ getServerStatus() }}
+</div>
